@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Attendance Scanner</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/html5-qrcode" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app-shell">
+    <section class="card">
+      <div class="eyebrow">ATTENDANCE</div>
+      <h1>QR Scanner</h1>
+      <p class="subtitle">Scan an employee QR code to mark attendance.</p>
+
+      <div id="reader" class="reader"></div>
+
+      <div id="status" class="status status-neutral" role="status" aria-live="polite">
+        <span class="status-dot"></span>
+        <div>
+          <strong id="status-title">Ready to scan</strong>
+          <p id="status-message">Allow camera access when prompted.</p>
+        </div>
+      </div>
+
+      <button id="restart-btn" class="restart-btn" type="button" hidden>Scan another QR</button>
+
+      <div class="manual-entry">
+        <div class="divider"><span>or enter ID manually</span></div>
+        <form id="manual-form">
+          <input id="manual-id" type="text" placeholder="e.g. EMP023" autocomplete="off" />
+          <button type="submit">Mark Present</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
