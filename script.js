@@ -1,5 +1,5 @@
 // Replace this with the /exec URL from your deployed Google Apps Script Web App.
-const APPS_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzoYu4HfbGHPfK3sliIvEorcvrK9xhkkHtLl8I6Fy9GWyGk184MnygkAIFYtdaj3Pcx9Q/exec";
 
 const SCANNER_ID = "reader";
 const SCAN_COOLDOWN_MS = 3000;
